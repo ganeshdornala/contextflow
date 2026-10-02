@@ -5,4 +5,128 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+.app {
+  width: min(900px, 92%);
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  color: #6b7280;
+}
+
+.chat {
+  min-height: 400px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.welcome {
+  text-align: center;
+  padding: 100px 20px;
+  color: #6b7280;
+}
+
+.welcome h2 {
+  color: #1f2937;
+}
+
+.message {
+  margin-bottom: 18px;
+  max-width: 80%;
+}
+
+.message.user {
+  margin-left: auto;
+}
+
+.message-label {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.message-content {
+  padding: 12px 15px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.message.user .message-content {
+  background: #e8f0fe;
+}
+
+.message.assistant .message-content {
+  background: #f1f3f5;
+}
+
+.loading {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.error {
+  margin-top: 15px;
+  padding: 10px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+}
+
+.composer {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  border: 0;
+  outline: none;
+  padding: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  border: 0;
+  border-radius: 7px;
+  padding: 9px 15px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
